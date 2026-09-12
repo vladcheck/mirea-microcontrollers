@@ -1,0 +1,14 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Archives
+*.rar
+*.zip
+
+# Docs
+*.pdf
+
+# PlatformIO build artifacts
+.pio/
+*.elf
