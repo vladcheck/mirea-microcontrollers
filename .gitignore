@@ -12,3 +12,6 @@ Thumbs.db
 # PlatformIO build artifacts
 .pio/
 *.elf
+
+*.lck
+.omo
