@@ -61,6 +61,7 @@ Schematic WRITES through the MCP while the project is open in the KiCad GUI risk
 ## Requirements
 - You talk to me in english, only. Never speak to me in russian;
 - All source code, reports, and other media intended for my professor must be in russian.
+- Always choose proteus over multisim. If proteus document is not available, tell the user and stop any work.
 
 ## Practice works
 
