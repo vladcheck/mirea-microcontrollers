@@ -1,7 +1,10 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "skills": {
-    "paths": ["/Users/vlad.valekzhanin/github/agentic/kicad-happy/skills"]
+    "paths": [
+      "/Users/vlad.valekzhanin/github/agentic/kicad-happy/skills",
+      "~/github/zxkmm/kicad-harness"
+    ]
   },
   "mcp": {
     "kicad": {
@@ -18,6 +21,12 @@
         "KICAD_PYTHON": "/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3",
         "PYTHONPATH": "/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/lib/python3.9/site-packages"
       }
+    },
+    "kicad-copilot": {
+      "type": "local",
+      "command": ["npx", "-y", "kicad-copilot-mcp"],
+      "enabled": true,
+      "timeout": 120000
     }
   }
 }
