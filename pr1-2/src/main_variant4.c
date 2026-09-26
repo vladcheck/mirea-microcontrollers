@@ -54,8 +54,8 @@ int main(void)
      * поэтому внутренняя подтяжка не требуется.
      */
     MODIFY_REG(GPIOA->CRL,
-               GPIO_CRL_MODE6 | GPIO_CRL_CNF6,
-               GPIO_CRL_CNF6_0);
+            GPIO_CRL_MODE6 | GPIO_CRL_CNF6,
+            GPIO_CRL_CNF6_0);
 
     /*
      * PA7 — выход push-pull со скоростью 2 МГц (светодиод).
@@ -63,8 +63,8 @@ int main(void)
      * CNF7  = 00: выход общего назначения push-pull.
      */
     MODIFY_REG(GPIOA->CRL,
-               GPIO_CRL_MODE7 | GPIO_CRL_CNF7,
-               GPIO_CRL_MODE7_1);
+            GPIO_CRL_MODE7 | GPIO_CRL_CNF7,
+            GPIO_CRL_MODE7_1);
 
     while (1)
     {

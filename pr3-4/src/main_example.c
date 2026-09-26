@@ -120,13 +120,13 @@ static void I2C1_Init_100k(void)
 
     /* PB6=SCL, PB7=SDA: альтернативная функция, открытый сток, 2 МГц. */
     MODIFY_REG(GPIOB->CRL,
-               GPIO_CRL_MODE6 | GPIO_CRL_CNF6,
-               GPIO_CRL_MODE6_1 |
-               GPIO_CRL_CNF6_0 | GPIO_CRL_CNF6_1);
+                GPIO_CRL_MODE6 | GPIO_CRL_CNF6,
+                GPIO_CRL_MODE6_1 |
+                GPIO_CRL_CNF6_0 | GPIO_CRL_CNF6_1);
     MODIFY_REG(GPIOB->CRL,
-               GPIO_CRL_MODE7 | GPIO_CRL_CNF7,
-               GPIO_CRL_MODE7_1 |
-               GPIO_CRL_CNF7_0 | GPIO_CRL_CNF7_1);
+                GPIO_CRL_MODE7 | GPIO_CRL_CNF7,
+                GPIO_CRL_MODE7_1 |
+                GPIO_CRL_CNF7_0 | GPIO_CRL_CNF7_1);
 
     CLEAR_BIT(I2C1->CR1, I2C_CR1_PE);
     MODIFY_REG(I2C1->CR2, I2C_CR2_FREQ, 8U);
@@ -154,7 +154,7 @@ static uint8_t EEPROM_WaitReady(void)
     uint32_t timeout;
     uint32_t sr1;
     const uint32_t fatal = I2C_SR1_BERR |
-                           I2C_SR1_ARLO | I2C_SR1_OVR;
+                            I2C_SR1_ARLO | I2C_SR1_OVR;
 
     for (attempt = 0U; attempt < 1000U; ++attempt) {
         if (!I2C1_WaitBusFree()) return 0U;
@@ -253,8 +253,8 @@ error:
 }
 
 static uint8_t DS1307_WriteBytes(uint8_t reg,
-                                 const uint8_t *data,
-                                 uint8_t count)
+                                const uint8_t *data,
+                                uint8_t count)
 {
     uint8_t i;
 
@@ -296,13 +296,13 @@ error:
 static uint8_t DecToBCD(uint8_t value)
 {
     return (uint8_t)(((value / 10U) << 4) |
-                     (value % 10U));
+                    (value % 10U));
 }
 
 static uint8_t BCDToDec(uint8_t value)
 {
     return (uint8_t)(10U * ((value >> 4) & 0x0FU) +
-                     (value & 0x0FU));
+                    (value & 0x0FU));
 }
 
 static uint8_t DS1307_SetTime(uint8_t h, uint8_t m, uint8_t s)

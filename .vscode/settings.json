@@ -1,0 +1,27 @@
+{
+  "cSpell.words": [
+    "BSRR",
+    "CFGR",
+    "CKSEL",
+    "CMSIS",
+    "CSSON",
+    "GPIOA",
+    "GPIOB",
+    "HPRE",
+    "HSEON",
+    "HSION",
+    "HSIRDY",
+    "IOPAEN",
+    "kicad",
+    "librsvg",
+    "PLLON",
+    "RSTR",
+    "RXNE",
+    "shellenv",
+    "SPDT",
+    "TRISE",
+    "TWCR",
+    "TWPS"
+  ],
+  "C_Cpp.errorSquiggles": "disabled"
+}

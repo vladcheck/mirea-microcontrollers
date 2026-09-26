@@ -85,7 +85,20 @@
   },
   "open_jobsets": [],
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "pr3-4.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": false,
+          "pos_x": 0,
+          "pos_y": 0,
+          "size_x": 0,
+          "size_y": 0
+        }
+      }
+    ]
   },
   "schematic": {
     "hierarchy_collapsed": [],

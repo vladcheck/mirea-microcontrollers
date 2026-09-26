@@ -49,8 +49,8 @@ int main(void)
      * к переключателю, который задаёт либо 1, либо 0.
      */
     MODIFY_REG(GPIOA->CRL,
-               GPIO_CRL_MODE0 | GPIO_CRL_CNF0,
-               GPIO_CRL_CNF0_0);
+            GPIO_CRL_MODE0 | GPIO_CRL_CNF0,
+            GPIO_CRL_CNF0_0);
 
     /*
      * PA1 — выход push-pull со скоростью 2 МГц.
@@ -58,8 +58,8 @@ int main(void)
      * CNF1  = 00: выход общего назначения push-pull.
      */
     MODIFY_REG(GPIOA->CRL,
-               GPIO_CRL_MODE1 | GPIO_CRL_CNF1,
-               GPIO_CRL_MODE1_1);
+            GPIO_CRL_MODE1 | GPIO_CRL_CNF1,
+            GPIO_CRL_MODE1_1);
 
     while (1)
     {
